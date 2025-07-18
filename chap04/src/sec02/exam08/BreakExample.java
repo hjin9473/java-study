@@ -19,6 +19,17 @@ public class BreakExample {
 //		[출력]
 //		45까지의 합: 1035
 		
+		int n = 0;
+		int k = 0;
+		for (int i = 0; i < n; i++) {
+			 k += i;
+			 n++;
+			 if (k>1000) {
+				break;
+			}
+		}
+		System.out.println(n + "까지의 합: " + k);
+		
 		
 		
 		
