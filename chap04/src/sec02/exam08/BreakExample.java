@@ -28,7 +28,8 @@ public class BreakExample {
 				break;
 			}
 		}
-		System.out.println(n + "까지의 합: " + k);
+		System.out.println(n + " 까지의 합: " + k);
+		System.out.println(n + " 까지의 합: " + k);
 		
 		
 		
