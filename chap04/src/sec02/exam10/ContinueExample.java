@@ -1,5 +1,7 @@
 package sec02.exam10;
 
+import java.util.Scanner;
+
 public class ContinueExample {
 	public static void main(String[] args) {
 		//짝수만 출력
@@ -21,9 +23,23 @@ public class ContinueExample {
 //		
 //		[입력]
 //		영희야 생 일 축 하 해 !
-//		
 //		[출력]
 //		영희야생일축하해!
+		Scanner sc = new Scanner(System.in);
+		String str1 = sc.nextLine();
+		
+		for (int i = 0; i < str1.length(); i++) {
+			char ch = str1.charAt(i);
+			if (ch == ' ') {
+				continue;
+			}
+			System.out.print(ch);
+		}
+		
+		
+		
+				
+		
 		
 		
 		

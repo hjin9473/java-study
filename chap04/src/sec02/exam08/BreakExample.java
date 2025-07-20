@@ -21,15 +21,12 @@ public class BreakExample {
 		
 		int n = 0;
 		int k = 0;
-		for (int i = 0; i < n; i++) {
-			 k += i;
-			 n++;
-			 if (k>1000) {
-				break;
-			}
+		
+		while (k<1000) {
+			n++;
+			k += n;
+		
 		}
-		System.out.println(n + " 까지의 합: " + k);
-		System.out.println(n + " 까지의 합: " + k);
 		System.out.println(n + " 까지의 합: " + k);
 		
 		
