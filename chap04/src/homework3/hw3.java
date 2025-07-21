@@ -19,7 +19,7 @@ public class hw3 {
 			System.out.println("세 수 중에서 가장 작은 수는 " + b + "입니다.");
 		}
 		if (c<b && c<a) {
-			System.out.println("세 수 중에서 가장 작은 수는" + c + "입니다.");
+			System.out.println("세 수 중에서 가장 작은 수는 " + c + "입니다.");
 		}
 		
 		
