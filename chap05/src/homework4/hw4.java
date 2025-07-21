@@ -14,6 +14,7 @@ public class hw4 {
 			}
 					} while (answer.equals("yes"));
 			System.out.println("게임을 다시 플레이하시겠습니까?(yes/no)");
+//			String answer = sc.nextLine();
 		
 			
 			
