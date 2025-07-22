@@ -18,7 +18,7 @@ public class hw5 {
                 System.out.printf("%d전 %d승 %d무 %d패\n", total, win, draw, lose);
                 break;
             }
-
+ 
             if (!(mine.equals("가위") || mine.equals("바위") || mine.equals("보"))) {
                 System.out.println("잘못입력하였습니다");
                 continue;
