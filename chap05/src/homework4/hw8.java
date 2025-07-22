@@ -29,20 +29,19 @@ public class hw8 {
             System.out.print("다시 하시겠습니까? (Y/N): ");
             String answer = sc.nextLine();
             
-            if (answer.equalsIgnoreCase("Y")||answer.equalsIgnoreCase("y")) {
-                break;  // 반복문 처음으로 돌아감
-            } else if (answer.equalsIgnoreCase("N")||answer.equalsIgnoreCase("n")) {
-                repeat = false;  // 반복 종료
+            if (answer.equals("Y")||answer.equals("y")) {
+                break;  
+            } else if (answer.equals("N")||answer.equals("n")) {
+                repeat = false;  
                 break;
             } else {
                 System.out.println("잘못된 대답입니다. 다시 입력해주세요.");
             }
-        }
-        System.out.println("프로그램을 종료합니다.");
-        sc.close();
-
+		}
 		
 		}
+		System.out.println("프로그램을 종료합니다.");
+		sc.close();
 	}
 
 }
