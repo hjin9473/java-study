@@ -10,14 +10,12 @@ package sec04.exam06.quiz;
 //41.0
 public class Adder {
 	double add(double c, double d) {
-		double k = c + d;
-		return k;
+		return c + d;
 		
 	}
 	
 	int add(int a, int b) {
-		int i = a + b;
-		return i;
+		 return a + b;
 	}
 
 

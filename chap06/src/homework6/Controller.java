@@ -43,7 +43,16 @@ public class Controller {
 	}
 	
 	void count(String a) {
+		int count = 0;
 		for (int i = 0; i < a.length(); i++) {
+			count++;
+		}
+		System.out.println(count);
+	}
+	void gugu(int a) {
+		int total = 0;
+		for (int i = 1; i <= 9; i++) {
+			System.out.println(a + " * " + i + " = " + (a * i)); 		
 			
 		}
 	}
