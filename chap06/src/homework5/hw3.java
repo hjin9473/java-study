@@ -33,9 +33,14 @@ public class hw3 {
 		System.out.println(Arrays.toString(updw));
 		
 		
-		
-		
-		
-		
 	}
+
+
+
+		
+		
+		
+		
+		
+
 }
