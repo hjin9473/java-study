@@ -1,24 +1,24 @@
 package homework9.Stu_Peo;
 
-public class Student extends Person{
-	private int grade;
-	private String major;
-	
-	public Student(String name, int grade, String major) {
-		super(age,height,weight);
-		this.grade = grade;
-		this.major = major;
-		
-	}
-	
-	public void Student(String name, int age, double height,
-			double weight, int grade, String major) {
-		
-		
-	}
-	public void toString() {
-		
-	}
-	
-
-}
+//public class Student extends Person{
+//	private int grade;
+//	private String major;
+//	private String name;
+//	
+//	@Override
+//	public Student(String name, int grade, String major) {
+//		super(age, height, weight);
+//		this.name = name;
+//		this.grade = grade;
+//		this.major = major;
+//		
+//	}
+//
+//	@Override
+//	public String toString() {
+//		
+//		return null;
+//	}
+//	
+//
+//}

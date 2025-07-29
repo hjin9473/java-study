@@ -1,7 +1,7 @@
 package homework9.Stu_Peo;
 
-public class Person {
-	String name;
+public abstract class Person {
+	
 	private int age;
 	private double height;
 	private double weight;
@@ -22,13 +22,9 @@ public class Person {
 		return weight;
 	}
 	
-	public void Person() {
-
-	}
+	public abstract void Person();
 	
-//	public String toString() {
-//		return
-//	}
+	public abstract String toString();
 	
 	
 	
