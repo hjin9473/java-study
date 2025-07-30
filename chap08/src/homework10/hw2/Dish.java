@@ -1,14 +1,17 @@
 package homework10.hw2;
 
 public class Dish extends Menu{
-	public Dish() {
+	String ingredients;
+	
+	
+	public Dish(String ingredients) {
 		super("오", 5);
+		this.ingredients = ingredients;
 	}
 
 	@Override
 	public void cook() {
-		// TODO Auto-generated method stub
-		
+		System.out.println("재료는" + ingredients+"입니다.");
 	}
 	
 
