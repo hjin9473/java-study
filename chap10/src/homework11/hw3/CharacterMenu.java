@@ -1,19 +1,20 @@
 package homework11.hw3;
 
-import java.util.Iterator;
+import java.util.Scanner;
 
 public class CharacterMenu {
-	public void menu(String a) {
-		try {
-			for (int i = 0; i < a.length(); i++) {
-				char ch = a.charAt(i);
-				if((ch >= 'A' && ch <= 'Z') || (ch >= 'a' && ch <= 'z')) {
-					
-				}
-			}
-		} catch (Exception e) {
-			// TODO: handle exception
-		}
-	}
+    public void menu() {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("문자열을 입력하세요: ");
+        String input = sc.nextLine();
 
+        CharacterController controller = new CharacterController();
+
+        try {
+            int count = controller.countAlpha(input);
+            System.out.println("영문자는 " + count + "개입니다.");
+        } catch (CharCheckException e) {
+            System.out.println("예외 발생: " + e.getMessage());
+        }
+    }
 }
