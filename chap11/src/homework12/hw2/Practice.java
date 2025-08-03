@@ -7,11 +7,11 @@ public class Practice {
 			 int point1 = (array.indexOf(" "));
 			 int point2 = (array.indexOf("구")); 
 			
-			 if (point2 == -1) {
-		            System.out.println("null");
-		        } else {
-		            System.out.println(array.substring(point1 , point2 + 1));
-		        }
+			 if (point2 != -1 && point2 == point1 + 1) {
+				 System.out.println("null");
+	            } else {
+	            	System.out.println(array.substring(point1 + 1 , point2 + 1));
+	            }
 			 
 			 
 			 
