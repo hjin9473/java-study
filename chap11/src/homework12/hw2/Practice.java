@@ -10,7 +10,7 @@ public class Practice {
 			 if (point2 == -1) {
 		            System.out.println("null");
 		        } else {
-		            System.out.println(array.substring(point1 , point2 + 1));
+		            System.out.println(array.substring(point1 + 1, point2 + 1));
 		        }
 			 
 			 
