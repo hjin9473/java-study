@@ -45,7 +45,10 @@ public class Lottery {
 		if (this == obj) {
 			return true;
 		}
-		if (!(obj instanceof Lottery)) {
+		if (obj == null) {
+			return false;
+		}
+		if (getClass() != obj.getClass()) {
 			return false;
 		}
 		Lottery other = (Lottery) obj;

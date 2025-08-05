@@ -1,6 +1,9 @@
 package homework14;
 
+import java.util.LinkedList;
+import java.util.List;
 import java.util.Scanner;
+import java.util.Set;
 
 public class LotteryMenu {
 	Scanner sc = new Scanner(System.in);
@@ -56,11 +59,25 @@ public class LotteryMenu {
 	}
 	
 	public void deleteObject() {
-		
+		System.out.println("삭제할 대상의 이름과 핸드폰 번호를 입력하세요.");
+		System.out.print("이름");
+		String name = sc.next();
+		System.out.print("휴대폰 번호(-빼고) : ");
+		String pn = sc.next();
+		Lottery lottery = new Lottery(name, pn);
+		boolean result = lc.insertObject(lottery);
+		if (result == true) {
+			System.out.println("삭제 완료되었습니다.");
+		}else {
+			System.out.println("존재하지 않는 대상입니다.");
+		}
 	}
 	
 	public void searchObject() {
-		
+		Set<Lottery> list = lc.searchObject();
+		for (Lottery l : list) {
+            System.out.println(l);
+		}
 	}
 	
 	public void winObject() {

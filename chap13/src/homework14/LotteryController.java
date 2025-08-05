@@ -12,7 +12,14 @@ public class LotteryController {
 	}
 	
 	boolean deleteObject(Lottery l) {
-		return false;
+		boolean result = lottery.remove(l);
+		if (result && win != null) {
+	        win.remove(l);
+		}
+	        return result;
+	}
+	public Set<Lottery> searchObject(){
+		return lottery;
 	}
 
 
