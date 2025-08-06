@@ -2,7 +2,7 @@ package sec01.exam05;
 
 import java.util.Objects;
 
-public class Member implements Comparable<Member> {
+public class Member implements Comparable <Member> {
 	private String name;
 	private int age;
 	

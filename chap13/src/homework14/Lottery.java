@@ -2,7 +2,7 @@ package homework14;
 
 import java.util.Objects;
 
-public class Lottery {
+public class Lottery implements Comparable<Lottery>{
 	String name;
 	String phone;
 	
@@ -55,11 +55,12 @@ public class Lottery {
 		return Objects.equals(name, other.name) && Objects.equals(phone, other.phone);
 	}
 
-	public int compareTo(String anotherString) {
-		return name.compareTo(anotherString);
+	@Override
+    public int compareTo(Lottery o) {
+        int result = this.name.compareTo(o.name);
+        if (result != 0) return result;
+        return this.phone.compareTo(o.phone);
 	}
-	
-	
 	
 	
 
