@@ -23,7 +23,7 @@ public class MemberMenu {
 	   	
 	   	switch (num) {
 	   		case 1: joinMember(); break;
-	   		case 2: logIn(); break;
+//	   		case 2: logIn(); break;
 	   		case 3: sameName(); break;
 	   		case 9:
 	   			System.out.println("프로그램을 종료합니다.");
@@ -59,23 +59,44 @@ public class MemberMenu {
 	}
 	
 	public void joinMember() {
-		System.out.print("아이디 : ");
-		String id = sc.next();
-		System.out.print("비밀번호 : ");
-		String password = sc.next();
-		System.out.print("이름 : ");
-		String name = sc.next();
-		
-//		Map<String, Member> map = mc.joinMember(password, name);
-		
-		
-		
-		
+		while (true) {
+			System.out.println("=== 1. 회원가입 ===");
+			System.out.print("아이디 : ");
+			String id = sc.next();
+			System.out.print("비밀번호 : ");
+			String password = sc.next();
+			System.out.print("이름 : ");
+			String name = sc.next();
+			Member member = new Member(password, name);
+			boolean result = mc.joinMember(id, member);
+	
+			if (result == false) {
+				System.out.println("중복된 아이디입니다. 다시 입력해주세요.");
+			}
+			
+			if (result == true) {
+				System.out.println("성공적으로 회원가입 완료하였습니다.");
+				break;				
+			}	
+		}
 	}
 	
-	public void logIn() {
-		
-	}
+//	public void logIn() {
+//		while (true) {
+//			System.out.println("=== 2. 로그인 ===");
+//			System.out.print("아이디 : ");
+//			String id = sc.next();
+//			System.out.print("비밀번호 : ");
+//			String password = sc.next();
+//			String result = mc.logIn(id, password);
+//			if (result != null) {
+//				System.out.println(result + "님, 환영합니다!");
+//				break;
+//			}else {
+//				System.out.println("틀린 아이디 또는 비밀번호입니다. 다시 입력해주세요.");
+//			}
+//		}
+//	}
 	
 	public void changePassword() {
 		
